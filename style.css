@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d7523e;
+    padding: 5px;
+
+}
+
+header {
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+p {
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 65vh;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    flex: 2;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.button {
+    color: #ffffff;
+    background-color: #d7523e;
+    border-radius: 10px;
+    padding: 8px 0 8px 20px;
+    margin-bottom: 5px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #d7523e;
+    border: 1px solid #d7523e;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    flex: 5;
+    flex-direction: column;
+}
+
+a {
+    color: #d7523e;
+    text-decoration: none;
+}
+
+.large,
+.text {
+    color: #d7523e;
+    margin: auto;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+aside {
+    display: flex;
+    flex: 2;
+    width: 100%;
+    background-color: #f7dfdd;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    flex-direction: column;
+}
+
+footer {
+    width: 97%;
+    text-align: center;
+    color: #d7523e;
+    background-color: #d3d3d3;
+    border: 1px solid #7f7f7f;
+    border-radius: 10px;
+    align-self: center;
+}
+
+@media screen and (max-width: 769px) {
+
+    .container {
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        flex: 5;
+    }
+
+    .button {
+
+        text-align: center;
+    }
+
+    section {
+        width: 50%;
+        display: flex;
+        flex: 4;
+
+    }
+
+    aside {
+
+        width: 50%;
+        display: flex;
+        flex: 4;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .container {
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    section {
+        width: 100%;
+        margin: auto;
+    }
+
+    aside {
+        width: 100%;
+    }
+}
